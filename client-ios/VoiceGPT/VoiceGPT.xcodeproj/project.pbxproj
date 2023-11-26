@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003B4610F37F808D1D136115 /* Pods_VoiceGPT_VoiceGPTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332731391EF3DD32DFAD10F0 /* Pods_VoiceGPT_VoiceGPTUITests.framework */; };
+		0946D09B2AFF4D7B006A4AFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0946D09A2AFF4D7B006A4AFB /* AppDelegate.m */; };
+		0946D09E2AFF4D7B006A4AFB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0946D09D2AFF4D7B006A4AFB /* SceneDelegate.m */; };
+		0946D0A12AFF4D7B006A4AFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0946D0A02AFF4D7B006A4AFB /* ViewController.m */; };
+		0946D0A42AFF4D7B006A4AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0946D0A22AFF4D7B006A4AFB /* Main.storyboard */; };
+		0946D0A62AFF4D7D006A4AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0946D0A52AFF4D7D006A4AFB /* Assets.xcassets */; };
+		0946D0A92AFF4D7D006A4AFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0946D0A72AFF4D7D006A4AFB /* LaunchScreen.storyboard */; };
+		0946D0AC2AFF4D7D006A4AFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0946D0AB2AFF4D7D006A4AFB /* main.m */; };
+		0946D0B62AFF4D7D006A4AFB /* VoiceGPTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0946D0B52AFF4D7D006A4AFB /* VoiceGPTTests.m */; };
+		0946D0C02AFF4D7D006A4AFB /* VoiceGPTUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0946D0BF2AFF4D7D006A4AFB /* VoiceGPTUITests.m */; };
+		0946D0C22AFF4D7D006A4AFB /* VoiceGPTUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0946D0C12AFF4D7D006A4AFB /* VoiceGPTUITestsLaunchTests.m */; };
+		09638E182B09EFD20036223F /* DemoWaveRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09638E172B09EFD20036223F /* DemoWaveRecordView.m */; };
+		09A75B722B09BB6400A6E126 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A75B712B09BB6400A6E126 /* libmp3lame.a */; };
+		09A75B752B09BBA000A6E126 /* DemoAudioTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A75B742B09BBA000A6E126 /* DemoAudioTransformer.m */; };
+		09C20B892B01CF940079AD50 /* DemoNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C20B882B01CF940079AD50 /* DemoNetworkManager.m */; };
+		28B9715ECED7CE1EA5688236 /* Pods_VoiceGPTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2066841EA5D976BF356822 /* Pods_VoiceGPTTests.framework */; };
+		68191015F2CF32170C63D85C /* Pods_VoiceGPT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A84635C75DE81116B1FD3E /* Pods_VoiceGPT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0946D0B22AFF4D7D006A4AFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0946D08E2AFF4D7B006A4AFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0946D0952AFF4D7B006A4AFB;
+			remoteInfo = VoiceGPT;
+		};
+		0946D0BC2AFF4D7D006A4AFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0946D08E2AFF4D7B006A4AFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0946D0952AFF4D7B006A4AFB;
+			remoteInfo = VoiceGPT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08C00BF81094820DDCF42B69 /* Pods-VoiceGPT-VoiceGPTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceGPT-VoiceGPTUITests.release.xcconfig"; path = "Target Support Files/Pods-VoiceGPT-VoiceGPTUITests/Pods-VoiceGPT-VoiceGPTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0911D92D2AFFB757002B1C81 /* VoiceGPT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceGPT-Prefix.pch"; sourceTree = "<group>"; };
+		0946D0962AFF4D7B006A4AFB /* VoiceGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0946D0992AFF4D7B006A4AFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0946D09A2AFF4D7B006A4AFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0946D09C2AFF4D7B006A4AFB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		0946D09D2AFF4D7B006A4AFB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		0946D09F2AFF4D7B006A4AFB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0946D0A02AFF4D7B006A4AFB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0946D0A32AFF4D7B006A4AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0946D0A52AFF4D7D006A4AFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0946D0A82AFF4D7D006A4AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0946D0AA2AFF4D7D006A4AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0946D0AB2AFF4D7D006A4AFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0946D0B12AFF4D7D006A4AFB /* VoiceGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceGPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0946D0B52AFF4D7D006A4AFB /* VoiceGPTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceGPTTests.m; sourceTree = "<group>"; };
+		0946D0BB2AFF4D7D006A4AFB /* VoiceGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0946D0BF2AFF4D7D006A4AFB /* VoiceGPTUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceGPTUITests.m; sourceTree = "<group>"; };
+		0946D0C12AFF4D7D006A4AFB /* VoiceGPTUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceGPTUITestsLaunchTests.m; sourceTree = "<group>"; };
+		09638E162B09EFD20036223F /* DemoWaveRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoWaveRecordView.h; sourceTree = "<group>"; };
+		09638E172B09EFD20036223F /* DemoWaveRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoWaveRecordView.m; sourceTree = "<group>"; };
+		09A75B6F2B09BB6400A6E126 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		09A75B712B09BB6400A6E126 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		09A75B732B09BBA000A6E126 /* DemoAudioTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoAudioTransformer.h; sourceTree = "<group>"; };
+		09A75B742B09BBA000A6E126 /* DemoAudioTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAudioTransformer.m; sourceTree = "<group>"; };
+		09C20B872B01CF940079AD50 /* DemoNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoNetworkManager.h; sourceTree = "<group>"; };
+		09C20B882B01CF940079AD50 /* DemoNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoNetworkManager.m; sourceTree = "<group>"; };
+		0D4E3A0F79F465F861CCF74F /* Pods-VoiceGPTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceGPTTests.debug.xcconfig"; path = "Target Support Files/Pods-VoiceGPTTests/Pods-VoiceGPTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A2066841EA5D976BF356822 /* Pods_VoiceGPTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceGPTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		279168B7917B54552A47B0E2 /* Pods-VoiceGPT-VoiceGPTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceGPT-VoiceGPTUITests.debug.xcconfig"; path = "Target Support Files/Pods-VoiceGPT-VoiceGPTUITests/Pods-VoiceGPT-VoiceGPTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		31A84635C75DE81116B1FD3E /* Pods_VoiceGPT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceGPT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		332731391EF3DD32DFAD10F0 /* Pods_VoiceGPT_VoiceGPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceGPT_VoiceGPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5354D4572722AFDB9EE7EF /* Pods-VoiceGPTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceGPTTests.release.xcconfig"; path = "Target Support Files/Pods-VoiceGPTTests/Pods-VoiceGPTTests.release.xcconfig"; sourceTree = "<group>"; };
+		66990BFC58EFD4AD07C8AB29 /* Pods-VoiceGPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceGPT.debug.xcconfig"; path = "Target Support Files/Pods-VoiceGPT/Pods-VoiceGPT.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC770E085A7A6EBC08286CB /* Pods-VoiceGPT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceGPT.release.xcconfig"; path = "Target Support Files/Pods-VoiceGPT/Pods-VoiceGPT.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0946D0932AFF4D7B006A4AFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68191015F2CF32170C63D85C /* Pods_VoiceGPT.framework in Frameworks */,
+				09A75B722B09BB6400A6E126 /* libmp3lame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0946D0AE2AFF4D7D006A4AFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B9715ECED7CE1EA5688236 /* Pods_VoiceGPTTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0946D0B82AFF4D7D006A4AFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003B4610F37F808D1D136115 /* Pods_VoiceGPT_VoiceGPTUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0946D08D2AFF4D7B006A4AFB = {
+			isa = PBXGroup;
+			children = (
+				09A75B6C2B09BB6400A6E126 /* lame */,
+				0946D0982AFF4D7B006A4AFB /* VoiceGPT */,
+				0946D0B42AFF4D7D006A4AFB /* VoiceGPTTests */,
+				0946D0BE2AFF4D7D006A4AFB /* VoiceGPTUITests */,
+				0946D0972AFF4D7B006A4AFB /* Products */,
+				466BA025E91DC3CC0623C35B /* Pods */,
+				D2ECD26189B88877E209ABE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0946D0972AFF4D7B006A4AFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0946D0962AFF4D7B006A4AFB /* VoiceGPT.app */,
+				0946D0B12AFF4D7D006A4AFB /* VoiceGPTTests.xctest */,
+				0946D0BB2AFF4D7D006A4AFB /* VoiceGPTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0946D0982AFF4D7B006A4AFB /* VoiceGPT */ = {
+			isa = PBXGroup;
+			children = (
+				0946D0992AFF4D7B006A4AFB /* AppDelegate.h */,
+				0946D09A2AFF4D7B006A4AFB /* AppDelegate.m */,
+				0946D09C2AFF4D7B006A4AFB /* SceneDelegate.h */,
+				0946D09D2AFF4D7B006A4AFB /* SceneDelegate.m */,
+				0946D09F2AFF4D7B006A4AFB /* ViewController.h */,
+				0946D0A02AFF4D7B006A4AFB /* ViewController.m */,
+				09A75B732B09BBA000A6E126 /* DemoAudioTransformer.h */,
+				09A75B742B09BBA000A6E126 /* DemoAudioTransformer.m */,
+				09C20B872B01CF940079AD50 /* DemoNetworkManager.h */,
+				09C20B882B01CF940079AD50 /* DemoNetworkManager.m */,
+				09638E162B09EFD20036223F /* DemoWaveRecordView.h */,
+				09638E172B09EFD20036223F /* DemoWaveRecordView.m */,
+				0946D0A22AFF4D7B006A4AFB /* Main.storyboard */,
+				0946D0A52AFF4D7D006A4AFB /* Assets.xcassets */,
+				0946D0A72AFF4D7D006A4AFB /* LaunchScreen.storyboard */,
+				0946D0AA2AFF4D7D006A4AFB /* Info.plist */,
+				0946D0AB2AFF4D7D006A4AFB /* main.m */,
+				0911D92D2AFFB757002B1C81 /* VoiceGPT-Prefix.pch */,
+			);
+			path = VoiceGPT;
+			sourceTree = "<group>";
+		};
+		0946D0B42AFF4D7D006A4AFB /* VoiceGPTTests */ = {
+			isa = PBXGroup;
+			children = (
+				0946D0B52AFF4D7D006A4AFB /* VoiceGPTTests.m */,
+			);
+			path = VoiceGPTTests;
+			sourceTree = "<group>";
+		};
+		0946D0BE2AFF4D7D006A4AFB /* VoiceGPTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0946D0BF2AFF4D7D006A4AFB /* VoiceGPTUITests.m */,
+				0946D0C12AFF4D7D006A4AFB /* VoiceGPTUITestsLaunchTests.m */,
+			);
+			path = VoiceGPTUITests;
+			sourceTree = "<group>";
+		};
+		09A75B6C2B09BB6400A6E126 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				09A75B6D2B09BB6400A6E126 /* include */,
+				09A75B702B09BB6400A6E126 /* lib */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		09A75B6D2B09BB6400A6E126 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				09A75B6E2B09BB6400A6E126 /* lame */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		09A75B6E2B09BB6400A6E126 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				09A75B6F2B09BB6400A6E126 /* lame.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		09A75B702B09BB6400A6E126 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				09A75B712B09BB6400A6E126 /* libmp3lame.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		466BA025E91DC3CC0623C35B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66990BFC58EFD4AD07C8AB29 /* Pods-VoiceGPT.debug.xcconfig */,
+				6EC770E085A7A6EBC08286CB /* Pods-VoiceGPT.release.xcconfig */,
+				279168B7917B54552A47B0E2 /* Pods-VoiceGPT-VoiceGPTUITests.debug.xcconfig */,
+				08C00BF81094820DDCF42B69 /* Pods-VoiceGPT-VoiceGPTUITests.release.xcconfig */,
+				0D4E3A0F79F465F861CCF74F /* Pods-VoiceGPTTests.debug.xcconfig */,
+				4E5354D4572722AFDB9EE7EF /* Pods-VoiceGPTTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2ECD26189B88877E209ABE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31A84635C75DE81116B1FD3E /* Pods_VoiceGPT.framework */,
+				332731391EF3DD32DFAD10F0 /* Pods_VoiceGPT_VoiceGPTUITests.framework */,
+				1A2066841EA5D976BF356822 /* Pods_VoiceGPTTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0946D0952AFF4D7B006A4AFB /* VoiceGPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0946D0C52AFF4D7D006A4AFB /* Build configuration list for PBXNativeTarget "VoiceGPT" */;
+			buildPhases = (
+				62EFB941845228E0355F48E8 /* [CP] Check Pods Manifest.lock */,
+				0946D0922AFF4D7B006A4AFB /* Sources */,
+				0946D0932AFF4D7B006A4AFB /* Frameworks */,
+				0946D0942AFF4D7B006A4AFB /* Resources */,
+				AD417C01F68722FA0AC8F393 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceGPT;
+			productName = VoiceGPT;
+			productReference = 0946D0962AFF4D7B006A4AFB /* VoiceGPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0946D0B02AFF4D7D006A4AFB /* VoiceGPTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0946D0C82AFF4D7D006A4AFB /* Build configuration list for PBXNativeTarget "VoiceGPTTests" */;
+			buildPhases = (
+				F2684EF811E231EC28AF9A4E /* [CP] Check Pods Manifest.lock */,
+				0946D0AD2AFF4D7D006A4AFB /* Sources */,
+				0946D0AE2AFF4D7D006A4AFB /* Frameworks */,
+				0946D0AF2AFF4D7D006A4AFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0946D0B32AFF4D7D006A4AFB /* PBXTargetDependency */,
+			);
+			name = VoiceGPTTests;
+			productName = VoiceGPTTests;
+			productReference = 0946D0B12AFF4D7D006A4AFB /* VoiceGPTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0946D0BA2AFF4D7D006A4AFB /* VoiceGPTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0946D0CB2AFF4D7D006A4AFB /* Build configuration list for PBXNativeTarget "VoiceGPTUITests" */;
+			buildPhases = (
+				C682FA94195C4103B37BFBB8 /* [CP] Check Pods Manifest.lock */,
+				0946D0B72AFF4D7D006A4AFB /* Sources */,
+				0946D0B82AFF4D7D006A4AFB /* Frameworks */,
+				0946D0B92AFF4D7D006A4AFB /* Resources */,
+				BCEEEC4D99D04BEA8BD1CA2D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0946D0BD2AFF4D7D006A4AFB /* PBXTargetDependency */,
+			);
+			name = VoiceGPTUITests;
+			productName = VoiceGPTUITests;
+			productReference = 0946D0BB2AFF4D7D006A4AFB /* VoiceGPTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0946D08E2AFF4D7B006A4AFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0946D0952AFF4D7B006A4AFB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					0946D0B02AFF4D7D006A4AFB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0946D0952AFF4D7B006A4AFB;
+					};
+					0946D0BA2AFF4D7D006A4AFB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0946D0952AFF4D7B006A4AFB;
+					};
+				};
+			};
+			buildConfigurationList = 0946D0912AFF4D7B006A4AFB /* Build configuration list for PBXProject "VoiceGPT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0946D08D2AFF4D7B006A4AFB;
+			productRefGroup = 0946D0972AFF4D7B006A4AFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0946D0952AFF4D7B006A4AFB /* VoiceGPT */,
+				0946D0B02AFF4D7D006A4AFB /* VoiceGPTTests */,
+				0946D0BA2AFF4D7D006A4AFB /* VoiceGPTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0946D0942AFF4D7B006A4AFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0946D0A92AFF4D7D006A4AFB /* LaunchScreen.storyboard in Resources */,
+				0946D0A62AFF4D7D006A4AFB /* Assets.xcassets in Resources */,
+				0946D0A42AFF4D7B006A4AFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0946D0AF2AFF4D7D006A4AFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0946D0B92AFF4D7D006A4AFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62EFB941845228E0355F48E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceGPT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD417C01F68722FA0AC8F393 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceGPT/Pods-VoiceGPT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceGPT/Pods-VoiceGPT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoiceGPT/Pods-VoiceGPT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCEEEC4D99D04BEA8BD1CA2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceGPT-VoiceGPTUITests/Pods-VoiceGPT-VoiceGPTUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceGPT-VoiceGPTUITests/Pods-VoiceGPT-VoiceGPTUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoiceGPT-VoiceGPTUITests/Pods-VoiceGPT-VoiceGPTUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C682FA94195C4103B37BFBB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceGPT-VoiceGPTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2684EF811E231EC28AF9A4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceGPTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0946D0922AFF4D7B006A4AFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0946D0A12AFF4D7B006A4AFB /* ViewController.m in Sources */,
+				09A75B752B09BBA000A6E126 /* DemoAudioTransformer.m in Sources */,
+				09638E182B09EFD20036223F /* DemoWaveRecordView.m in Sources */,
+				0946D09B2AFF4D7B006A4AFB /* AppDelegate.m in Sources */,
+				0946D0AC2AFF4D7D006A4AFB /* main.m in Sources */,
+				09C20B892B01CF940079AD50 /* DemoNetworkManager.m in Sources */,
+				0946D09E2AFF4D7B006A4AFB /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0946D0AD2AFF4D7D006A4AFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0946D0B62AFF4D7D006A4AFB /* VoiceGPTTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0946D0B72AFF4D7D006A4AFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0946D0C02AFF4D7D006A4AFB /* VoiceGPTUITests.m in Sources */,
+				0946D0C22AFF4D7D006A4AFB /* VoiceGPTUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0946D0B32AFF4D7D006A4AFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0946D0952AFF4D7B006A4AFB /* VoiceGPT */;
+			targetProxy = 0946D0B22AFF4D7D006A4AFB /* PBXContainerItemProxy */;
+		};
+		0946D0BD2AFF4D7D006A4AFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0946D0952AFF4D7B006A4AFB /* VoiceGPT */;
+			targetProxy = 0946D0BC2AFF4D7D006A4AFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0946D0A22AFF4D7B006A4AFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0946D0A32AFF4D7B006A4AFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0946D0A72AFF4D7D006A4AFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0946D0A82AFF4D7D006A4AFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0946D0C32AFF4D7D006A4AFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0946D0C42AFF4D7D006A4AFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0946D0C62AFF4D7D006A4AFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66990BFC58EFD4AD07C8AB29 /* Pods-VoiceGPT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUAH8HMK9E;
+				GCC_PREFIX_HEADER = "VoiceGPT/VoiceGPT-Prefix.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceGPT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lame/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyh.VoiceGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0946D0C72AFF4D7D006A4AFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC770E085A7A6EBC08286CB /* Pods-VoiceGPT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUAH8HMK9E;
+				GCC_PREFIX_HEADER = "VoiceGPT/VoiceGPT-Prefix.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceGPT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lame/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyh.VoiceGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0946D0C92AFF4D7D006A4AFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D4E3A0F79F465F861CCF74F /* Pods-VoiceGPTTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyh.VoiceGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceGPT";
+			};
+			name = Debug;
+		};
+		0946D0CA2AFF4D7D006A4AFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5354D4572722AFDB9EE7EF /* Pods-VoiceGPTTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyh.VoiceGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceGPT";
+			};
+			name = Release;
+		};
+		0946D0CC2AFF4D7D006A4AFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279168B7917B54552A47B0E2 /* Pods-VoiceGPT-VoiceGPTUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyh.VoiceGPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceGPT;
+			};
+			name = Debug;
+		};
+		0946D0CD2AFF4D7D006A4AFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C00BF81094820DDCF42B69 /* Pods-VoiceGPT-VoiceGPTUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyh.VoiceGPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceGPT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0946D0912AFF4D7B006A4AFB /* Build configuration list for PBXProject "VoiceGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0946D0C32AFF4D7D006A4AFB /* Debug */,
+				0946D0C42AFF4D7D006A4AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0946D0C52AFF4D7D006A4AFB /* Build configuration list for PBXNativeTarget "VoiceGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0946D0C62AFF4D7D006A4AFB /* Debug */,
+				0946D0C72AFF4D7D006A4AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0946D0C82AFF4D7D006A4AFB /* Build configuration list for PBXNativeTarget "VoiceGPTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0946D0C92AFF4D7D006A4AFB /* Debug */,
+				0946D0CA2AFF4D7D006A4AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0946D0CB2AFF4D7D006A4AFB /* Build configuration list for PBXNativeTarget "VoiceGPTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0946D0CC2AFF4D7D006A4AFB /* Debug */,
+				0946D0CD2AFF4D7D006A4AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0946D08E2AFF4D7B006A4AFB /* Project object */;
+}

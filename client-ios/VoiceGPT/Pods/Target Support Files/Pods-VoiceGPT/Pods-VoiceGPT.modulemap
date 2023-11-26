@@ -1,0 +1,6 @@
+framework module Pods_VoiceGPT {
+  umbrella header "Pods-VoiceGPT-umbrella.h"
+
+  export *
+  module * { export * }
+}
