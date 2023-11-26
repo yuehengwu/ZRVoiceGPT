@@ -3,8 +3,8 @@
 from flask import Flask, request, send_file, session, make_response
 from flask_session import Session
 from flask_cors import CORS
-from openai import OpenAI
 import logging, os, uuid, time
+from tutorial_api_key import client
 
 PORT = 5005
 
@@ -19,11 +19,6 @@ CORS(app, origins=[f"http://localhost:{PORT}", "https://chat.openai.com"])
 
 # 配置日志记录
 logging.basicConfig(filename='app.log', level=logging.DEBUG)
-
-#初始化OpenAI
-client = OpenAI(
-                api_key="your-chatgpt-key",                 
-                )
 
 # user_threads = {}
 
